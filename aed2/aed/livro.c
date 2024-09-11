@@ -1,21 +1,10 @@
 // livro.c
 #include "livro.h"
+#include "estrutura.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-// Inicializa a Biblioteca
-void inicializa_biblioteca(Biblioteca *biblioteca) {
-    biblioteca->capacidade = 10;
-    biblioteca->livros = malloc(biblioteca->capacidade * sizeof(Livro));
-    biblioteca->total_livros = 0;
-}
-
-// Expande a capacidade da biblioteca
-static void expandir_biblioteca(Biblioteca *biblioteca) {
-    biblioteca->capacidade *= 2;
-    biblioteca->livros = realloc(biblioteca->livros, biblioteca->capacidade * sizeof(Livro));
-}
 
 // Adiciona um Livro
 char* adicionar_livro(Biblioteca *biblioteca, Livro livro) {

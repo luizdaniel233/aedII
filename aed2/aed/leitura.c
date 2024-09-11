@@ -21,6 +21,6 @@ int main(){
     scanf("%s ",separador);
     scanf("%s", ano);
     //printf("%s\n", ano);
-    printf("%s|%s|%s|%s|%s\n", CMD, ISDN, titulo, autor, ano);
+    printf("%s|%s|%s|%s|%s\n", CMD, isbn, titulo, autor, ano);
 
 }

@@ -12,7 +12,7 @@ void inicializa_biblioteca(Biblioteca *biblioteca) {
 }
 
 // Função para expandir a capacidade da biblioteca
-static void expandir_biblioteca(Biblioteca *biblioteca) {
+void expandir_biblioteca(Biblioteca *biblioteca) {
     biblioteca->capacidade *= 2;
     biblioteca->livros = realloc(biblioteca->livros, biblioteca->capacidade * sizeof(Livro));
 }
