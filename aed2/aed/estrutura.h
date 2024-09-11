@@ -5,6 +5,6 @@
 #include "livro.h"
 
 void inicializa_biblioteca(Biblioteca *biblioteca);
-static void expandir_biblioteca(Biblioteca *biblioteca);
+void expandir_biblioteca(Biblioteca *biblioteca);
 
 #endif
